@@ -10,8 +10,8 @@ export default defineStore('hello', () => {
       return
     }
     try {
-      const result = await apis.getHello(id)
-      message.value = result.record.title
+      const {hello} = await apis.getHello(id)
+      message.value = hello.title
     } catch (e: any) {
       message.value = e.message
       return
