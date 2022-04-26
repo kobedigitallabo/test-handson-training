@@ -6,11 +6,16 @@ export default defineStore('hello', () => {
   const message = ref('')
 
   const getHello = async (id?: string) => {
-    if (id) {
+    if (!id) {
+      return
+    }
+    try {
       const result = await apis.getHello(id)
       message.value = result.record.title
+    } catch (e: any) {
+      message.value = e.message
+      return
     }
-    return
   }
 
   return {
