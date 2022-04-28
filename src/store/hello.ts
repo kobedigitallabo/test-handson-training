@@ -5,10 +5,7 @@ import apis from '../apis'
 export default defineStore('hello', () => {
   const message = ref('')
 
-  const getHello = async (id?: string) => {
-    if (!id) {
-      return
-    }
+  const getHello = async (id: string) => {
     try {
       const {hello} = await apis.getHello(id)
       message.value = hello.title

@@ -13,8 +13,8 @@ const helloStore = useHello();
 
 <template>
   <h1>{{ msg }}</h1>
-  <input class="entry_name" type="text" placeholder="id" v-model="id">
-  <button type="button" @click="helloStore.getHello(id)">getHello</button>
+  <input class="hello_id" type="text" placeholder="id" v-model="id">
+  <button class="get_button" type="button" @click="helloStore.getHello(id)">getHello</button>
   <h2>{{ helloStore.message }}</h2>
   <p>
     Recommended IDE setup:
@@ -33,7 +33,7 @@ const helloStore = useHello();
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
 
-  <button type="button" @click="count++">count is: {{ count }}</button>
+  <button class="count_button" type="button" @click="count++">count is: {{ count }}</button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
