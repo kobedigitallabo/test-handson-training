@@ -6,11 +6,12 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
-    "types": ["vite/client", "@types/jest", "node"],
+    "types": ["vite/client", "@types/jest", "node", "cypress"],
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true
   },

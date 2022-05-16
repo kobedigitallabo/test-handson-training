@@ -26,7 +26,10 @@ dist-ssr
 .env
 
 # Cypress directory
-cypress
+cypress/*
+!cypress/support
+!cypress/plugins
+.nyc_output
 
 # Coverage directory used by tools like istanbul
 coverage
