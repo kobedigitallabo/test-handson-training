@@ -9,7 +9,7 @@
     "tailwindcss": "tailwindcss",
     "test:unit": "jest --verbose --coverage",
     "test:e2e": "start-server-and-test dev http-get://localhost:3000 cypress",
-    "cypress": "cypress run --headless",
+    "cypress": "rm -f .nyc_output/out.json && cypress run --headless",
     "sonar": "node sonar-project.js"
   },
   "dependencies": {
