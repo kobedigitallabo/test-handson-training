@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import istanbul from 'vite-plugin-istanbul';
+const istanbul = require("vite-plugin-istanbul")
 
 // https://vitejs.dev/config/
 export default defineConfig({
